@@ -1,13 +1,15 @@
 # LinguaCafe FSRS / Sense Review Roadmap
 
-> **最后更新**：2026-06-26
-> **上一轮已验收基线 commit**：`83880cc`
+> **最后更新**：2026-06-29
+> **当前主仓库**：`LinguaCafe-dev-main`
+> **当前已验收基线 commit**：`ff68a51`
+> **总控大计划**：`docs/plans/linguacafe-master-plan.md`
 
 ---
 
 ## 一、维护规则
 
-1. 本文件是 LinguaCafe-local 的长期大计划。
+1. 本文件是 LinguaCafe Dev Main 的 FSRS / Sense Review 专项路线图；项目总控大计划见 `docs/plans/linguacafe-master-plan.md`。
 2. 每次路线、阶段、优先级、需求新增或延期，都必须修改本文件并 commit。
 3. 不以聊天记录作为唯一计划来源。
 4. 开发前仍必须基于 GitHub 最新 master 真实代码确认。
@@ -108,12 +110,17 @@
 | UI-Review-b | ✅ 已完成 — SenseReview 显示答案流程（先问题 → 显示答案 → 再评分） |
 | UI-Review-c | ✅ 已完成 — SenseReview 键盘快捷键（Space 显示答案，1/2/3/4 评分） |
 | UI-Review-e | ✅ 已完成 — 真实浏览器 smoke 验收记录（代码审查通过，浏览器 Incomplete） |
+| DevMain-1 | ✅ 已完成 — 新主仓库 `LinguaCafe-dev-main` 初始化，旧仓库 `LinguaCafe-local` 转为历史仓库 |
+| DevMain-2 | ✅ 已完成 — 新增 README / AI_CONTEXT / DEV_MAIN_WORKFLOW，建立 AI 二次开发上下文 |
+| DevMain-3 | ✅ 已完成 — 明确 public 仓库边界，补 `.gitignore`，新增 schema-only SQL 导出脚本 |
 
 ---
 
 ## 四、当前最新状态
 
-**Latest commit**：`1f64e3a`（UI-Review-c 基线，UI-Review-e 验收记录新增 docs）
+**Latest commit**：`ff68a51`（DevMain-3 公开边界修复）
+
+> 注意：当前 Dev Main 公开边界已完成，但真实数据库导出未完成。UI-Review-e 真实浏览器刷卡验收未完成。不进入 D.5。
 
 ### `/review-cards/manage` 当前能力
 
