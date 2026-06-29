@@ -31,3 +31,32 @@ yarn-error.log
 
 # OpenCode runtime data (not tracked, per AGENTS.md)
 .omo/
+
+# Local environment files
+/.env
+/.env.local
+/.env.*.local
+/.env.backup
+/.env.production
+/.env.development
+!.env.example
+!.env.example.local
+
+# Local database exports and migration packages
+*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak
+*.7z
+*.rar
+/private-migration/
+/migration-private/
+/local-migration/
+/database-backups/
+/LinguaCafe-new-main-migration/
+
+# Local user learning data exports
+/storage-export/
+/storage-backup/
+/storage-migration/
