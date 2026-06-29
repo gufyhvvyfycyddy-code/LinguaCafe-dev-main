@@ -64,15 +64,20 @@ if (-not (Test-Path "node_modules")) {
 }
 Write-Host "  OK"
 
-# 5. 检查 .env 中的 APP_KEY
+# 5. 检查 .env 中的 APP_KEY（仅提示，不自动生成）
 Write-Host "[5/8] 检查 APP_KEY..."
-$appKey = php -r "echo env('APP_KEY', '');" 2>$null
-if ([string]::IsNullOrWhiteSpace($appKey) -or $appKey -eq "") {
-    Write-Host "  APP_KEY 为空，正在生成..."
-    php artisan key:generate --force 2>&1 | Out-Null
-    Write-Host "  APP_KEY 已生成"
-} else {
-    Write-Host "  APP_KEY 已存在"
+try {
+    $appKey = php -r "try { echo env('APP_KEY', ''); } catch (Throwable \$e) { echo ''; }" 2>$null
+    if ([string]::IsNullOrWhiteSpace($appKey) -or $appKey -eq "") {
+        Write-Warning "APP_KEY 为空。请在项目根目录手动运行：php artisan key:generate"
+        Write-Warning "按 Ctrl+C 退出并执行上述命令后再重新运行本脚本。"
+        Write-Host ""
+        pause
+    } else {
+        Write-Host "  APP_KEY 已存在"
+    }
+} catch {
+    Write-Warning "无法检测 APP_KEY 状态。如果启动后出现错误，请手动运行：php artisan key:generate"
 }
 
 # 6. 清理配置缓存
