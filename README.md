@@ -1,18 +1,22 @@
-# LinguaCafe Dev Main
+# Historical repository / 历史仓库
 
-> 本仓库是用户本地 LinguaCafe FSRS / sense-only 改造项目的后续主开发仓库。  
-> 上游 LinguaCafe 原始说明保留在下方，方便对照原项目。
+> 本仓库仅保留用于历史追溯和旧开发记录参考，已经不再是 LinguaCafe 当前开发或外部审查的源码正本。
+> This repository is retained for provenance and historical reference only. It is not the current source of truth.
+>
+> 当前源码正本 / Current source: https://github.com/gufyhvvyfycyddy-code/LinguaCafe-local
+> 架构审查 / Architecture review: https://github.com/gufyhvvyfycyddy-code/LinguaCafe-architecture-review
+> 产品与上线审查 / Product and launch review: https://github.com/gufyhvvyfycyddy-code/LinguaCafe-product-launch
 
-## 本仓库定位
+## 历史定位
 
-本仓库用于继续开发本地 LinguaCafe 改造版本，重点方向是英文学习、WordSense 词义复习、FSRS 调度、阅读页熟悉度反馈和 Anki 风格复习体验。
+本仓库曾用于本地 LinguaCafe FSRS / sense-only 改造的阶段性主开发。以下内容保留用于理解当时的开发背景，不代表当前项目状态。
 
-当前主线：
+历史记录：
 
-- 新主仓库：`https://github.com/gufyhvvyfycyddy-code/LinguaCafe-dev-main`
-- 旧历史仓库：`LinguaCafe-local`
-- 旧电脑可运行路径：`D:\Document\lingl\LinguaCafe-main`
-- 目标数据库名：`linguacafe_fsrs`
+- 当时的开发仓库：`https://github.com/gufyhvvyfycyddy-code/LinguaCafe-dev-main`
+- 当前源码正本：`https://github.com/gufyhvvyfycyddy-code/LinguaCafe-local`
+- 历史本地运行路径：`D:\Document\lingl\LinguaCafe-main`
+- 当时使用的目标数据库名：`linguacafe_fsrs`
 
 公开说明：
 
